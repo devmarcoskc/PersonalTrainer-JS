@@ -1,0 +1,204 @@
+#section-9 {
+    height: auto;
+    background-color: #111;
+    width: 100%;
+    overflow: visible !important;
+}
+.card-shop-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    height: 100%;
+    margin: auto;
+}
+#prices-title {
+    margin-top: 20px;
+    font-size: 30px;
+}
+.card-shop-container h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #DCB818;
+    font-style: italic;
+}
+.cards-area-grid {
+    justify-content: space-between;
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 15px;
+}
+.card-area {
+    height: 450px;
+    width: 270px;
+    margin-top: 50px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #DCB818;
+    box-shadow: 0px 0px 5px 3px #DCB818;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.6s;
+  }
+.card-area:hover {
+    scale: 1.05;
+}
+.card-area:before {
+    content: '';
+    position: absolute;
+    top: -72%;
+    width: 100%;
+    height: 90%;
+    background-color: #DCB818;
+    transform: skewY(342deg);
+    transition: 0.5s;
+}
+.card-area img {
+    margin-top: 15px;
+    height: 60px;
+    width: 50px;
+    z-index: 30;
+}
+.card-area H1{
+    width: 100%;
+    color: #DCB818;
+    font-size: 23px;
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+.price-area {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+}
+.price-area h3 {
+    color: #DCB818;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 10px;
+}
+.price-area p {
+    font-size: 15px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 0px;
+}
+.title-and-check {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}  
+.title-and-check h3 {
+    font-size: 13px;
+    color: whitesmoke;
+    font-style: italic;
+}
+.title-and-check ion-icon {
+    color: #DCB818;
+    height: 30px;
+    width: 30px;
+}
+.card-area a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    background-color: #DCB818;
+    transition: all ease 1s;
+    box-shadow: 4px 11px 20px 15px rgba(245, 241, 0, 0.28);
+}
+.card-area a:hover {
+    animation: none;
+    background-color: whitesmoke;
+    color: #DCB818;
+}
+.observation-area {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 50px;
+    color: whitesmoke;
+}
+@media (max-width: 960px) {
+  .card-area:hover {
+    z-index: 30;
+  }
+}
+
+@media (max-width: 768px) {
+    section {
+      height: auto;
+    }
+    #prices-title {
+      margin-top: 30px;
+      font-size: 25px;
+    }
+    .cards-area-grid {
+      grid-template-columns: repeat(1, 1fr);
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center !important;
+      align-items: center !important;
+      width: 100%;
+    }
+    .card-area {
+      width: 280px !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
+    .title-and-check h3 {
+      font-size: 11px;
+    }
+    .card-area:hover {
+      scale:none;
+    }
+    .observation-area {
+      padding-top: 20px;
+    }
+}
+
+@media (max-width:380px) {
+    .card-area {
+      width: 270px !important;
+    }
+    .title-and-check {
+      width: 90%;
+    }
+    .cards-area-grid {
+      margin-bottom: 10px;
+    }
+    .title-and-check h3 {
+      font-size: 11px;
+      color: whitesmoke;
+      font-style: italic;
+    }
+    .card-area:hover {
+      scale: none;
+    }
+}
+
+@media (max-width: 300px) {
+  .card-area {
+    width: 220px !important;
+  }
+}

@@ -1,0 +1,125 @@
+#section-06 {
+    height: auto;
+    width: 100%;
+    background-color: #111;
+    height: auto;
+}
+.feedback-main-container {
+    height: 100%;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#feedback-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 37px;
+    color: #DCB818;
+}
+
+.feedback-wrapper {
+    width: 80%;
+    position: relative;
+    margin: 80px auto;
+  }
+.feedback-wrapper i{
+    top: 30%;
+    height: 46px;
+    position: absolute;
+    width: 46px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #DCB818;
+    line-height: 46px;
+    border-radius: 50%;
+    text-align: center;
+    transform: translateY(50%);
+}
+.feedback-wrapper i:first-child {
+    left: 0px;
+    display: none;
+}
+.feedback-wrapper i:last-child {
+    right: 0px;
+}
+.feedback-carousel {
+    margin: 0 auto;
+    width: 85%;
+}
+.feedback-wrapper .feedback-carousel {
+    white-space: nowrap;
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.feedback-carousel .dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.feedback-carousel img {
+    pointer-events: none;
+}
+.feedback-carousel img {
+    height: 360px;
+    border-radius: 10px;
+    width: calc(100%/3);
+    margin-left: 13px;
+}
+.feedback-carousel img:first-child {
+    margin-left: 0px;
+}
+
+@media (max-width: 960px) {
+    #feedback-title {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .feedback-carousel img {
+        height: 320px;
+        width: calc(100%/2);
+        margin-left: 13px;
+      }
+}
+  
+@media (max-width: 780px) {
+    #feedback-title {
+        font-size: 23px;
+        text-align: center;
+    }
+    .feedback-wrapper {
+        width: 100%;
+        position: relative;
+        margin: 80px auto;
+    }
+    .feedback-carousel {
+        width: 95%;
+    }
+    .feedback-wrapper i:first-child {
+        left: 0px;
+        display: none;
+      }
+      .feedback-wrapper i:last-child {
+        right: 0px;
+      }
+    .feedback-carousel img {
+      height: 400px;
+      width: calc(100%/1);
+      margin-left: 13px;
+    }
+}
+
+@media (max-width: 380px) {
+    #feedback-title {
+        font-size: 20px;
+        text-align: center;
+    }
+    .feedback-carousel img {
+        height: 350px;
+        width: calc(100%/1);
+        margin-left: 13px;
+    }
+}

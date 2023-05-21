@@ -1,0 +1,210 @@
+#section-05 {
+    height: 100vh;
+    width: 100%;
+    background-image: url('/images/wallpapper3.jpg');
+    background-size: cover;
+}
+.window--background-ebook {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.ebook-main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 80%;
+    margin: auto;
+}
+#h1-ebook-title  {
+    margin-top: 20px;
+    font-size: 37px;
+    color: #DCB818;
+    display: flex;
+    justify-content: center;
+}
+.content-ebook-container {
+    display: flex;
+}
+.title-ebook-area {
+    width: 100%;
+    justify-content: center;
+}
+.ebook-info-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    margin-top: 50px;
+}
+.checklist--area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+}
+.checklist--area h1 {
+    max-width: 90%;
+    margin-top: 10px;
+    font-size: 19px;
+    color: #DCB818;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+}
+.checklist--area ion-icon {
+    height: 40px;
+    width: 40px;
+    color: #DCB818;
+}
+#check {
+    margin-top: 10px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+.ebook-ad-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin-top: 50px;
+}
+.ebook-ad-container h1 {
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    color: whitesmoke;
+    font-style: italic;
+}
+.imgSlogan--container img {
+    display: none;
+    margin-top: 20px;
+    height: 100px;
+    width: 70%;
+}
+.download--container--ebook a{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    padding: 10px 15px;
+    border-radius: 15px;
+    width: 60%;
+    background-color: #DCB818;
+    opacity: 0.80;
+    transition: all ease 1s;
+    box-shadow: 4px 11px 20px 15px rgba(245, 241, 0, 0.28);
+}
+
+.download--container--ebook a:hover {
+    background-color: whitesmoke;
+    color: #DCB818;
+}
+
+@media (max-width: 980px) {
+    #section-05 {
+        height: auto;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+    .content-ebook-container {
+        flex-direction: column;
+    }
+    .ebook-info-container {
+        width: 100%;
+    }
+    .checklist--area h1 {
+        margin-top: 30px;
+    }
+    .ebook-ad-container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .ebook-ad-container h1 {
+        margin-top: 80px;
+    }
+    .download--container a {
+        font-size: 25px;
+        width: 400px;
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width:780px) {
+    #section-05 {
+        height: auto;
+        background-image: url('/images/wallpapper3.jpg');
+        background-size: cover;
+        background-position: -730px;
+    }
+    #h1-ebook-title {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+    .content-ebook-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .ebook-info-container {
+        width: 100%;
+    }
+    #check {
+        font-size: 25px;
+    }
+    .checklist--area {
+        max-width: 100%;
+    }
+    .checklist--area h1 {
+        margin-top: 20px;
+        font-size: 19px;
+        width: 90%;
+    }
+    .ebook-ad-container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .ebook-ad-container h1 {
+        margin-top: 30px;
+    }
+    .download--container--ebook a {
+        width: 280px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 380px) {
+    #section-05 {
+        height: auto;
+    }
+    .checklist--area h1 {
+        font-size: 17px;
+        width: 100%;
+    }
+    .download--container a {
+        font-size: 20px;
+        width: 280px;
+    }
+    .download--container {
+        margin-bottom: 70px;
+    } 
+}
+
+@media (max-width: 295px) {
+    .download--container a{
+        width: 230px;
+        font-size: 18px;
+    }
+}

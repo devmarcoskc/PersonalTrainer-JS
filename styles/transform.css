@@ -1,0 +1,119 @@
+#section-04 {
+    height: auto;
+    background-color: #111;
+}
+.transform--container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    max-width: 80%;
+    margin: auto;
+    color: #DCB818;
+}
+.transform--container h1 {
+    font-size: 37px;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: #DCB818;
+}
+.grid-transform-container {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+}
+
+.img-and-content-container {
+    display: none;
+    flex-direction: column;
+    height: 440px;
+    width: 340px;
+}
+.images-to-show {
+    display: flex;
+    height: 290px;
+    width: 100%;
+}
+.images-to-show img {
+    height: 100%;
+    width: 47.5%;
+    border-radius: 10px;
+}
+#image-02 {
+    margin-left: 5%;
+}
+.data-area {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.transform-description-area {
+    width: 80%;
+    margin: 10px auto;
+    color: #DCB818;
+    font-size: 13px;
+}
+@media (max-width: 920px) {
+    .grid-transform-container {
+        display: grid;
+        margin-top: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .img-and-content-container {
+        display: none;
+        flex-direction: column;
+        height: 400px;
+        width: 300px;
+    }
+    .images-to-show {
+        display: flex;
+        height: 250px;
+        width: 100%;
+    }
+}
+@media (max-width: 980px) {
+    .grid-transform-container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+    }
+}
+@media (max-width: 780px) {
+    .transform--container h1 {
+        margin-top: 25px;
+        display: flex;
+        text-align: center;
+        font-size: 23px;
+    }
+    .img-and-content-container {
+        display: none;
+        flex-direction: column;
+        height: 400px;
+        width: 300px;
+    }
+    .images-to-show {
+        display: flex;
+        height: 250px;
+        width: 100%;
+    }
+    .grid-transform-container {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 10px;
+    }
+}
+@media (max-width: 380px) {
+    .img-and-content-container {
+        height: 380px;
+        width: 280px;
+    }
+    
+    .images-to-show {
+        height: 230px;
+    }
+}

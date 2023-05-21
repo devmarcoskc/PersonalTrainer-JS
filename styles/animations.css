@@ -1,0 +1,38 @@
+@keyframes btn-opacity {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.3; }
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: all ease 1.2s;
+}
+[data-anime="left-side-anime"] {
+    transform:  translate3d(-100vw, 0, 0);
+}
+[data-anime="right-side-anime"] {
+    transform:  translate3d(200vw, 0, 0);
+}
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.custom-shape-divider-top-1676733326 {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1676733326 svg {
+    position: relative;
+    display: block;
+    width: calc(124% + 1.3px);
+    height: 25px;
+}
+
+.custom-shape-divider-top-1676733326 .shape-fill {
+    fill: #DCB818;
+}
